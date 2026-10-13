@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#eef3f7"/>
+  <polyline points="80,280 160,220 240,250 320,150 400,190 480,100 560,140" fill="none" stroke="#00b7b3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="220" r="7" fill="#0d1b2a"/>
+  <circle cx="320" cy="150" r="7" fill="#0d1b2a"/>
+  <circle cx="480" cy="100" r="7" fill="#0d1b2a"/>
+  <rect x="60" y="60" width="200" height="16" rx="4" fill="#0d1b2a"/>
+  <text x="320" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#0d1b2a">Senior Design capstone — optimization results (placeholder)</text>
+</svg>

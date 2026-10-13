@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#eef3f7"/>
+  <g stroke="#d6dee5" stroke-width="2">
+    <line x1="0" y1="90" x2="640" y2="90"/><line x1="0" y1="180" x2="640" y2="180"/><line x1="0" y1="270" x2="640" y2="270"/>
+    <line x1="120" y1="0" x2="120" y2="360"/><line x1="260" y1="0" x2="260" y2="360"/><line x1="400" y1="0" x2="400" y2="360"/><line x1="540" y1="0" x2="540" y2="360"/>
+  </g>
+  <path d="M110 120 l0 0" />
+  <g fill="#00b7b3">
+    <path d="M180 100 c-22 0 -36 16 -36 34 0 26 36 62 36 62 s36 -36 36 -62 c0 -18 -14 -34 -36 -34z"/>
+    <path d="M330 150 c-22 0 -36 16 -36 34 0 26 36 62 36 62 s36 -36 36 -62 c0 -18 -14 -34 -36 -34z"/>
+    <path d="M470 80 c-22 0 -36 16 -36 34 0 26 36 62 36 62 s36 -36 36 -62 c0 -18 -14 -34 -36 -34z"/>
+  </g>
+  <g fill="#eef3f7"><circle cx="180" cy="134" r="11"/><circle cx="330" cy="184" r="11"/><circle cx="470" cy="114" r="11"/></g>
+  <g>
+    <rect x="60" y="210" width="190" height="96" rx="10" fill="#ffffff" stroke="#0d1b2a" stroke-width="3"/>
+    <rect x="76" y="226" width="110" height="12" rx="3" fill="#0d1b2a"/>
+    <rect x="76" y="248" width="150" height="8" rx="3" fill="#9db0c2"/>
+    <rect x="76" y="264" width="90" height="8" rx="3" fill="#9db0c2"/>
+    <rect x="76" y="282" width="70" height="14" rx="7" fill="#00b7b3"/>
+  </g>
+  <text x="320" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#0d1b2a">Arabati — cart search on a map (placeholder)</text>
+</svg>

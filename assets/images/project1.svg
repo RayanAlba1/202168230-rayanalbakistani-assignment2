@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#e6faf9"/>
+  <rect x="60" y="70" width="520" height="220" rx="16" fill="#0d1b2a"/>
+  <rect x="90" y="100" width="200" height="18" rx="4" fill="#00b7b3"/>
+  <rect x="90" y="130" width="320" height="12" rx="4" fill="#3c5468"/>
+  <rect x="90" y="152" width="260" height="12" rx="4" fill="#3c5468"/>
+  <rect x="90" y="190" width="140" height="70" rx="10" fill="#00b7b3" opacity="0.85"/>
+  <rect x="250" y="190" width="140" height="70" rx="10" fill="#2fe2dd" opacity="0.6"/>
+  <rect x="410" y="190" width="140" height="70" rx="10" fill="#f7f9fa" opacity="0.2"/>
+  <text x="320" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#0d1b2a">Optimal X — POS dashboard (placeholder)</text>
+</svg>
