@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayan Albakistani | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Rayan Albakistani — Industrial &amp; Systems Engineer, data analyst and startup co-founder." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#top" class="logo">Rayan<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#github" data-nav>GitHub</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark / light theme" title="Toggle theme">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero / About ===== -->
+    <section id="about" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <!-- Dynamic greeting: changes with time of day and the visitor's saved name -->
+          <p class="eyebrow" id="greeting" aria-live="polite">Hi, my name is</p>
+          <h1>Rayan Albakistani</h1>
+          <p class="tagline">I turn messy operations into simple, working systems.</p>
+          <p class="about-copy">
+            I'm an Industrial &amp; Systems Engineering graduate from KFUPM, based in the
+            Eastern Province of Saudi Arabia. I like taking a process apart, finding where
+            it breaks, and rebuilding it — whether that's a factory line, a spreadsheet
+            model, or a piece of software. Right now I split my time between data analytics
+            work and building my own startup.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">See my work</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+
+          <!-- Visitor name: saved in localStorage so the greeting is personal next visit -->
+          <form class="visitor-form" id="visitorForm" novalidate>
+            <label for="visitorName" class="visitor-label">Tell me your name and I'll remember it next time</label>
+            <div class="visitor-row">
+              <input type="text" id="visitorName" name="visitorName" placeholder="Your first name" maxlength="30" autocomplete="given-name" />
+              <button type="submit" class="btn btn-outline btn-small">Save</button>
+              <button type="button" class="btn btn-ghost btn-small" id="visitorForget" hidden>Forget me</button>
+            </div>
+            <p class="visitor-status" id="visitorStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="hero-image reveal">
+          <img src="assets/images/avatar.svg" alt="Illustrated avatar of Rayan" width="280" height="280" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects (filter tabs + live search + expand/collapse) ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">01.</span> Projects</h2>
+        <p class="section-intro reveal">
+          Things I've been building. Filter by type, or search for a keyword — the list updates as you type.
+        </p>
+
+        <div class="projects-toolbar reveal">
+          <div class="filter-tabs" role="tablist" aria-label="Filter projects by type">
+            <button class="filter-tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="product">Product</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="data">Data</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="web">Web</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="engineering">Engineering</button>
+          </div>
+          <label class="search-box">
+            <span class="visually-hidden">Search projects</span>
+            <input type="search" id="projectSearch" placeholder="Search projects… (e.g. React, POS)" autocomplete="off" />
+          </label>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card reveal" data-category="product data" data-keywords="optimal x pos saas cafe startup pricing dashboards financial model">
+            <img src="assets/images/project1.svg" alt="Placeholder illustration for the Optimal X project" class="project-thumb" />
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Optimal X</h3>
+                <span class="status-pill status-active">Active</span>
+              </div>
+              <p class="project-summary">
+                A café-first point-of-sale (POS) SaaS built for the Saudi market. I co-founded
+                the venture and lead the data and financial modeling side.
+              </p>
+              <div class="project-details" hidden>
+                <p>
+                  My work covers pricing and unit economics, the financial model investors see,
+                  and the dashboards that help café owners understand their daily numbers —
+                  sales mix, peak hours, and margin per item — without needing a spreadsheet.
+                </p>
+                <ul class="detail-list">
+                  <li>Role: co-founder, data &amp; financial modeling</li>
+                  <li>Stack: SaaS product, analytics dashboards, Excel/Python models</li>
+                  <li>Status: building, with early café pilots</li>
+                </ul>
+              </div>
+              <ul class="tag-list">
+                <li>SaaS</li>
+                <li>Data Modeling</li>
+                <li>Product Strategy</li>
+              </ul>
+              <div class="project-links">
+                <button class="project-link toggle-details" aria-expanded="false">Read more ↓</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web product" data-keywords="arabati react node express mongodb marketplace booking carts swe 363 team project">
+            <img src="assets/images/project3.svg" alt="Placeholder illustration for the Arabati project" class="project-thumb" />
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Arabati — Event Cart Booking</h3>
+                <span class="status-pill status-progress">In progress</span>
+              </div>
+              <p class="project-summary">
+                A web marketplace where event organizers in the Eastern Province find and book
+                mobile coffee and food carts. SWE 363 term project, Team 20.
+              </p>
+              <div class="project-details" hidden>
+                <p>
+                  Customers search carts by date, area, category and budget, send a structured
+                  booking request, and track one shared status with the vendor. Vendors manage
+                  their menu, packages and availability from a dashboard; an admin verifies vendors.
+                </p>
+                <ul class="detail-list">
+                  <li>Role: requirements, wireframes and React front end</li>
+                  <li>Stack: React, Node/Express, MongoDB, Maps API</li>
+                  <li>Status: requirements &amp; wireframes done, front end next</li>
+                </ul>
+              </div>
+              <ul class="tag-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project-links">
+                <button class="project-link toggle-details" aria-expanded="false">Read more ↓</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="engineering" data-keywords="senior design capstone optimization operations research industrial system kfupm">
+            <img src="assets/images/project2.svg" alt="Placeholder illustration for the Senior Design capstone project" class="project-thumb" />
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Senior Design Capstone</h3>
+                <span class="status-pill status-done">Completed</span>
+              </div>
+              <p class="project-summary">
+                My ISE graduation project — an end-to-end engineering design study of a real
+                industrial system, delivered with a full team report and technical reviews.
+              </p>
+              <div class="project-details" hidden>
+                <p>
+                  The study covered constraint analysis, an optimization model for the
+                  system's main bottleneck, and a performance evaluation of the proposed
+                  design against the current state.
+                </p>
+                <ul class="detail-list">
+                  <li>Role: modeling and analysis lead within the team</li>
+                  <li>Methods: operations research, simulation, performance evaluation</li>
+                  <li>Deliverables: design report, review cycle, final presentation</li>
+                </ul>
+              </div>
+              <ul class="tag-list">
+                <li>Operations Research</li>
+                <li>Optimization</li>
+                <li>Team Project</li>
+              </ul>
+              <div class="project-links">
+                <button class="project-link toggle-details" aria-expanded="false">Read more ↓</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data" data-keywords="exlog oilfield data analyst reporting python excel analytics">
+            <img src="assets/images/project4.svg" alt="Placeholder illustration for data analytics work" class="project-thumb" />
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Oilfield Operations Analytics</h3>
+                <span class="status-pill status-active">Active</span>
+              </div>
+              <p class="project-summary">
+                Part-time data analyst work for an oilfield services company: turning raw
+                operational records into reports people actually use.
+              </p>
+              <div class="project-details" hidden>
+                <p>
+                  I clean and combine operational data, build the recurring reports and
+                  dashboards, and look for the patterns that explain delays and costs so
+                  the operations team can act on them.
+                </p>
+                <ul class="detail-list">
+                  <li>Role: data analyst (part-time)</li>
+                  <li>Tools: Python, Excel, dashboards</li>
+                  <li>Focus: reporting, data cleaning, operational KPIs</li>
+                </ul>
+              </div>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Excel</li>
+                <li>Analytics</li>
+              </ul>
+              <div class="project-links">
+                <button class="project-link toggle-details" aria-expanded="false">Read more ↓</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty state: shown when no project matches the filter + search -->
+        <div class="empty-state" id="projectsEmpty" hidden>
+          <p><strong>No projects found.</strong> Nothing matches that filter and search.</p>
+          <button class="btn btn-outline btn-small" id="clearFilters">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Live GitHub feed (public API + loading / error / empty states) ===== -->
+    <section id="github" class="section github-section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">02.</span> Live from GitHub</h2>
+        <p class="section-intro reveal">
+          My most recently updated public repositories, fetched live from the GitHub API when the page loads.
+        </p>
+
+        <div class="gh-toolbar reveal">
+          <span class="gh-meta" id="ghMeta"></span>
+          <button class="btn btn-outline btn-small" id="ghRefresh">Refresh</button>
+        </div>
+
+        <div class="gh-status" id="ghStatus" role="status" aria-live="polite"></div>
+        <ul class="gh-list" id="ghList"></ul>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">03.</span> Get in touch</h2>
+        <p class="section-intro reveal">
+          Have a project, an opportunity, or just want to say hi? Drop me a message below.
+        </p>
+
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required aria-describedby="nameError" />
+            <p class="field-error" id="nameError" aria-live="polite"></p>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required aria-describedby="emailError" />
+            <p class="field-error" id="emailError" aria-live="polite"></p>
+          </div>
+          <div class="form-row">
+            <label for="message">Message <span class="char-count" id="charCount">0 / 500</span></label>
+            <textarea id="message" name="message" rows="5" maxlength="500" placeholder="What's on your mind?" required aria-describedby="messageError"></textarea>
+            <p class="field-error" id="messageError" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn btn-primary" id="sendBtn">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Rayan Albakistani. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-links">
+        <a href="https://github.com/RayanAlba1" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
