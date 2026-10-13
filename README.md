@@ -11,8 +11,7 @@ than distracts.
 
 ## Live demo
 
-> Add the GitHub Pages link here once deployed, e.g.
-> `https://rayanalba1.github.io/202168230-rayanalbakistani-assignment2/`
+**https://rayanalba1.github.io/202168230-rayanalbakistani-assignment2/** — deployed with GitHub Pages from the `main` branch.
 
 ## What's new since Assignment 1
 
